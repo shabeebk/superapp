@@ -46,3 +46,8 @@ jobs:
       - name: Build the static assets
         run: npm run generate
 
+      - name: Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v2
+        with: 
+          name: static-build
+          path: dist
