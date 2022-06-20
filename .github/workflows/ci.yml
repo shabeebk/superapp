@@ -56,7 +56,7 @@ jobs:
           folder: dist
 
       - name: Upload Artifact GitHub Action
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with: 
           name: static-build-${{ matrix.node }}
           path: dist
